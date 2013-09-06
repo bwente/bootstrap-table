@@ -93,7 +93,7 @@
     * ============ */
 
     $(function () {
-        $('body').on('click.table.data-api', '[data-type="modal"], [data-type="inline"], [data-url="*"], [data-content="*"]', function (e) {
+        $('body').on('click.table.data-api touchstart.table.data-api', '[data-type="modal"], [data-type="inline"], [data-url="*"], [data-content="*"]', function (e) {
             e.preventDefault();
             $(this).table('show')
         })
